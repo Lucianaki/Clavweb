@@ -1,0 +1,6 @@
+clase 1 : fotos, video, formulario de contacto
+clase 2 : estilo, botones, tamanos, primer entrega
+clase 3: Box model y flexbox: button, flex wrap, flex froggy, justufy content.
+clase 4: Grids tutor, div, columnas grid templete columnas 100px card--- media(ancho del estilo){estilos css hasta 1060}
+clase 5: pseudoclases y bootstrap (libreria de codigos, pseudo elementos w3wchool, 12 cl)
+clase 6: Git y github segunda entrega cmd j (abro la terminal)reiniciar el visual.
