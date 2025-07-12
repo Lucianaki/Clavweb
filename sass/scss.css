@@ -90,7 +90,7 @@ main {
 }
 .carrusel {
   position: relative;
-  width: 100%;
+  width: 80%;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -99,7 +99,7 @@ main {
   position: absolute;
   opacity: 0;
   transition: opacity 1s ease-in-out;
-  width: 100%;
+  width: 80%;
   height: auto;
   object-fit: cover;
 }
@@ -107,6 +107,24 @@ main {
 .carrusel img.activo {
   opacity: 1;
   position: relative;
+}
+
+.que-nos-diferencia {
+  padding: 3rem 8% 1rem;
+  text-align: center;
+}
+.que-nos-diferencia h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #111;
+}
+.que-nos-diferencia p {
+  max-width: 900px;
+  margin: 1rem 8rem;
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
 }
 
 .footer-line {
@@ -267,7 +285,7 @@ main {
 }
 @media (max-width: 768px) {
   .intro-container {
-    flex-direction: column;
+    lex-direction: column;
   }
   .intro-container .imagen, .intro-container .texto {
     flex: 1 1 100%;
@@ -309,6 +327,14 @@ main {
 }
 .navbar .nav-links li a:hover {
   color: #A4FF00;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
 }
 
 * {
