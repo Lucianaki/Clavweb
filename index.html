@@ -8,6 +8,7 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 </head>
 <body>
+<!--menu hambuerguesa-->
 
   <!-- HEADER -->
   <header class="encabezado">
@@ -29,14 +30,16 @@
     </div>
   
     <!-- BARRA DE NAVEGACIÓN -->
-    <nav class="navbar">
-      <ul class="nav-links">
-        <li><a href="pages/servicios.html">Cómo trabajamos</a></li>
-        <li><a href="pages/equipo.html">Equipo</a></li>
-        <li><a href="pages/porfolio.html">Trabajos</a></li>
-        <li><a href="pages/contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+    <!-- BARRA DE NAVEGACIÓN -->
+<nav class="navbar">
+  <div class="menu-toggle" id="menu-toggle">☰</div>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="pages/servicios.html">Cómo trabajamos</a></li>
+    <li><a href="pages/equipo.html">Equipo</a></li>
+    <li><a href="pages/porfolio.html">Trabajos</a></li>
+    <li><a href="pages/contacto.html">Contacto</a></li>
+  </ul>
+</nav>
   </header>
 
   <!-- CONTENIDO PRINCIPAL -->
@@ -86,5 +89,13 @@
             
     </div>
 </footer>
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
 </body>
 </html>
