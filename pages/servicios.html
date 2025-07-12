@@ -27,7 +27,7 @@
         <a href="https://www.facebook.com" target="_blank">
         <img src="../assets/Imagenes/logo-Face-verde 2.png" alt="Facebook" id="face-2"/>
         </a>
-        <a href="https://www.instagram.com" target="_blank">
+        <a href="https://www.instagram.com/clavdesign" target="_blank">
             <img src="../assets/Imagenes/logo-igverde 2.png" alt="Instagram" id="ig-2" />
         </a>
         </div>
@@ -43,15 +43,17 @@
         </header>
         <main>
             
-                <section class="intro-container">
-                    <div class="intro-izquierda">
-                        <h1 class="titulo">Que nos diferencia</h1>
-                        <div class="imagen">
-                        <img src="../assets/Imagenes/scrum.jpeg" alt="Equipo trabajando con metodología Scrum" id="scrum">
-                        </div>
-                    </div>
-                    <div class="intro-derecha">
-                        <h2>¿Cómo trabajamos?</h2>
+            <section class="intro-container">
+                <div class="imagen carrusel">
+                    <img src="../assets/Imagenes/scrum.jpeg" alt="Equipo trabajando con Scrum" class="activo">
+                    <img src="../assets/Imagenes/scrum2.jpeg" alt="Segunda imagen del equipo">
+                    <img src="../assets/Imagenes/scrum3.jpeg" alt="Tercera imagen del equipo">
+                    <img src="../assets/Imagenes/scrum 4.jpeg" alt="cuarta imagen del equipo">
+                </div>
+            
+                <div class="texto">
+                    <h1 class="titulo">Qué nos diferencia</h1>
+                    <h2>¿Cómo trabajamos?</h2>
                         <p>En CLAV Design combinamos creatividad, estrategia y organización para ofrecer un servicio 360 que se adapta a las necesidades de cada cliente.</p>
                         <p><strong>Trabajamos con la metodología Scrum</strong>, un modelo ágil que nos permite dividir los proyectos en etapas cortas (sprints), priorizar tareas según su valor, adaptarnos rápidamente a los cambios y mantener una comunicación constante con el cliente.</p>
                         <ul>
@@ -75,13 +77,24 @@
             <div class="derechos">
                 © 2025 Todos los derechos reservados
             </div>
-        </div>
-        <div class="redes">
-            <img src="../assets/Imagenes/logo-Face-verde.png" alt="link a Facebook" id="face">
-            <img src="../assets/Imagenes/logo-igverde.png" alt="link a Instagram" id="ig">
-        </div>
+            <div class="redes">
+                <a href="https://www.facebook.com/share/1As7pc6xRJ/?mibextid=wwXIfr" target="_blank">
+                    <img src="../assets/Imagenes/logo-Face-verde.png" alt="link a Facebook" id="face"></a>
+                <a href="https://www.instagram.com/clavdesign" target="_blank">
+                    <img src="../assets/Imagenes/logo-igverde.png" alt="link a Instagram" id="ig"></a>
+                    
+            </div>
         </footer>
-
+        <script>
+            const imgs = document.querySelectorAll('.carrusel img');
+            let index = 0;
+        
+            setInterval(() => {
+                imgs[index].classList.remove('activo');
+                index = (index + 1) % imgs.length;
+                imgs[index].classList.add('activo');
+            }, 3000);
+        </script>
 
 </body>
 

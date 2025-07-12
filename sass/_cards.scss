@@ -1,0 +1,126 @@
+.grid-equipo, .portfolio-grid {
+  display: grid;
+  gap: 2rem;
+  padding: 4rem 5%;
+}
+
+.grid-equipo {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.portfolio-grid {
+  grid-template-columns: repeat(3, 1fr);
+  box-sizing: border-box;
+}
+
+.card, .portfolio-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    color: #333;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #555;
+  }
+}
+
+@media (max-width: 900px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.intro-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4rem 5%;
+  gap: 3rem;
+  align-items: flex-start;
+}
+.intro-container .imagen {
+  flex: 1 1 45%;
+}
+.intro-container .imagen img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.intro-container .texto {
+  flex: 1 1 45%;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .intro-container {
+    flex-direction: column;
+  }
+  .intro-container .imagen, .intro-container .texto {
+    flex: 1 1 100%;
+  }
+}
+.carrusel {
+  position: relative;
+  width: 80%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carrusel img {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+}
+
+.carrusel img.activo {
+  opacity: 1;
+  position: relative;
+}
+.que-nos-diferencia {
+  padding: 8rem 8% 3rem; 
+  text-align: center;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #111;
+  }
+
+  p {
+    max-width: 900px;
+    margin: 0 auto; 
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+  }
+}

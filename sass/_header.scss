@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 .encabezado {
     position: fixed;
     top: 0;
@@ -10,53 +12,34 @@
 
 .logo-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 2rem;
     padding: 1rem 5%;
     background-color: white;
 
     img {
-        height: 80px;
-        cursor: pointer;
-    }
+    height: 80px;
+    cursor: pointer;
+}
 
     h1 {
-        font-size: 1.5rem;
-        font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 600;
     }
 }
 
-.navbar {
-    background-color: #000;
-    padding: 1rem 5%;
+    .redes-header {
     display: flex;
     justify-content: flex-end;
-
-    .nav-links {
-        list-style: none;
-        display: flex;
-        gap: 2rem;
-
-        li {
-            a {
-                text-decoration: none;
-                color: #fff;
-                font-weight: 600;
-                font-family: 'HKGrotesk', sans-serif;
-                transition: color 0.3s;
-
-                &:hover {
-                    color: #A4FF00;
-                }
-            }
-        }
-    }
-}
-.redes-header {
-    display: flex;
-    justify-content: flex-end; 
     align-items: center;
     gap: 1rem;
-    padding-right: 2rem; 
+    padding-right: 2rem;
     margin-bottom: 1rem;
+}
+
+#face-2,
+#ig-2 {
+    height: 40px;
+    cursor: pointer;
 }

@@ -1,10 +1,14 @@
-@use "variables";
-@use "footer";
-@use "header";
-@use "header";
-@use "equipo";
-@use "formulario";
+@use 'body';
+@use 'cards';
+@use 'footer';
+@use 'formulario';
+@use 'header';
+@use 'home';
+@use 'mixins';
+@use 'navbar';
 @use "reset";
+@use "variables";
+
 *{
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;

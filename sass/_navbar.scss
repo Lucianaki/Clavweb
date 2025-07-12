@@ -1,0 +1,26 @@
+@use 'variables' as *;
+
+.navbar {
+    background-color: #000;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: flex-end;
+
+    .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+
+    li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 600;
+        font-family: $font-principal;
+        transition: color 0.3s;
+
+        &:hover {
+        color: $verde-lima;
+        }
+        }
+    }
+}

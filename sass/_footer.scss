@@ -3,6 +3,7 @@
     background-color: #000;
     width: 100%;
     margin-top: 20px;
+    padding: 1rem;
 }
 
 .derechos {
@@ -10,14 +11,15 @@
     text-align: center;
 }
 
-
 .redes {
-        display: flex;
-        justify-content: flex-end; 
-        align-items: center;
-        gap: 1rem;
-        padding-right: 2rem; 
-        margin-bottom: 1rem;
-    }
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
 
-
+#face,
+#ig {
+    height: 50px;
+    cursor: pointer;
+}
