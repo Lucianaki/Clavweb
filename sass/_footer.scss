@@ -1,0 +1,23 @@
+.footer-line {
+    height: 40px;
+    background-color: #000;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.derechos {
+    margin: 20px;
+    text-align: center;
+}
+
+
+.redes {
+        display: flex;
+        justify-content: flex-end; 
+        align-items: center;
+        gap: 1rem;
+        padding-right: 2rem; 
+        margin-bottom: 1rem;
+    }
+
+

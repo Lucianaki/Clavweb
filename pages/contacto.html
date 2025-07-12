@@ -5,71 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../sass/scss.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-
-    <!-- HEADER + NAVEGACION  -->
-    <header>
-        <header class="encabezado">
-            <div class="logo-container">
-                <a href="../index.html">
-                    <img src="../assets/Imagenes/logo-clav.png" alt="logo de clav design" class="img">
+    <header class="encabezado">
+        <div class="logo-container">
+            <a href="../index.html">
+                <img src="../assets/Imagenes/logo-clav.png" alt="logo de clav design" class="img">
+            </a>
+            <h1>Diseñamos con intención, comunicamos con pasión.</h1>
+        
+            <!-- Redes en encabezado -->
+            <div class="redes-header">
+                <a href="https://www.facebook.com" target="_blank">
+                <img src="../assets/Imagenes/logo-Face-verde 2.png" alt="Facebook" id="face-2"/>
                 </a>
-                <h1>Diseñamos con intención, comunicamos con pasión!</h1>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="../assets/Imagenes/logo-igverde 2.png" alt="Instagram" id="ig-2" />
+                </a>
+                </div>
             </div>
-            <nav class="navbar">
-                <ul class="nav-links">
-                    <a href="servicios.html">Cómo trabajamos</a>
-                    <a href="equipo.html">Equipo</a>
-                    <a href="porfolio.html">Trabajos</a>
-                    <a href="contacto.html">Contacto</a>
-                </ul>
-            </nav>
-        </header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="servicios.html">Cómo trabajamos</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+                <li><a href="porfolio.html">Trabajos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- FORMULARIO DE CONTACTO separar del borde y alinear -->
-        <main>
-            <form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ana Maria">
-                <br>
+    <main class="contacto-container">
+        <div class="contacto-imagen">
+            <img src="../assets/Imagenes/clav-logo-pelota.png" alt="Imagen contacto">
+        </div>
 
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" placeholder="Perez">
-                <br>
+        <form class="contacto-formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ana Maria">
 
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="12345678">
-                <br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Perez">
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="anamariaperez@gmail.com">
-                <br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="12345678">
 
-                <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password">
-                <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="anamariaperez@gmail.com">
 
-                <label for="fecha">Fecha de cumpleaños:</label>
-                <input type="date" id="fecha" name="fecha">
-            </form>
-        </main>
+            <label for="fecha">Fecha de cumpleaños:</label>
+            <input type="date" id="fecha" name="fecha">
 
-        <!-- FOOTER grids falta clase 4  -->
-        <footer>
-            <div class="footer-line"></div>
-            <div class="derechos">
-                © 2025 Todos los derechos reservados
-            </div>
-            <div class="redes">
-                <img src="../assets/Imagenes/logo-Face-verde.png" alt="link a Facebook" id="face">
-                <img src="../assets/Imagenes/logo-igverde.png" alt="link a Instagram" id="ig">
-            </div>
-        </footer>
+            <label for="mensaje">Consulta:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu consulta aquí..."></textarea>
 
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer-line"></div>
+        <div class="derechos">
+            © 2025 Todos los derechos reservados
+        </div>
+        <div class="redes">
+            <img src="../assets/Imagenes/logo-Face-verde.png" alt="link a Facebook" id="face">
+            <img src="../assets/Imagenes/logo-igverde.png" alt="link a Instagram" id="ig">
+        </div>
+    </footer>
 </body>
 
 </html>

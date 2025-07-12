@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipo</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../sass/scss.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- favicon para cargar la ruta del logo -->
     <!-- ponemos link y ponemos la ruta -->
@@ -15,78 +15,77 @@
 </head>
 
 <body>
-    <header>
+    
         <header class="encabezado">
             <div class="logo-container">
                 <a href="../index.html">
                     <img src="../assets/Imagenes/logo-clav.png" alt="logo de clav design" class="img">
                 </a>
-                <h1>Diseñamos con intención, comunicamos con pasión!</h1>
+                <h1>Diseñamos con intención, comunicamos con pasión.</h1>
+            
+            <!-- Redes en encabezado -->
+            <div class="redes-header">
+                <a href="https://www.facebook.com" target="_blank">
+                <img src="../assets/Imagenes/logo-Face-verde 2.png" alt="Facebook" id="face-2"/>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="../assets/Imagenes/logo-igverde 2.png" alt="Instagram" id="ig-2" />
+                </a>
+                </div>
             </div>
             <nav class="navbar">
                 <ul class="nav-links">
-                    <a href="servicios.html">Cómo trabajamos</a>
-                    <a href="equipo.html">Equipo</a>
-                    <a href="porfolio.html">Trabajos</a>
-                    <a href="contacto.html">Contacto</a>
+                    <li><a href="servicios.html">Cómo trabajamos</a></li>
+                    <li><a href="equipo.html">Equipo</a></li>
+                    <li><a href="porfolio.html">Trabajos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <!-- buscar las fotos del equipo y la mia  armar el link-->
-            
-            <h1>
-                Que nos diferencia
-            </h1>
-            <h3>Un equipo especializado: Contamos con fotógrafos, diseñadores gráficos y especialistas en marketing
-                digital, lic. en comunicación, especialistas en edición de video que trabajan en conjunto para ofrecer
-                soluciones completas.
-                Experiencia en campañas publicitarias: Nuestros especialistas en marketing digital están capacitados
-                en Meta Ads y Google Ads, garantizando la creación de campañas publicitarias eficientes y optimizadas.
-                Soluciones personalizadas: Diseñamos estrategias y contenidos personalizados para cada cliente,
-                asegurando que sus necesidades y objetivos específicos sean atendidos.
-                Creatividad visual y técnica: La combinación de diseño gráfico y fotografía profesional garantiza
-                que cada proyecto visual tenga un impacto duradero.
-
-            </h3>
-            <section id="equipo">
-                <h2>Equipo</h2>
+            <section class="que-nos-diferencia">
+                <h1>Que nos diferencia</h1>
+                <p>
+                Un equipo especializado: Contamos con fotógrafos, diseñadores gráficos y especialistas en marketing digital, licenciados en comunicación, especialistas en edición de video que trabajan en conjunto para ofrecer soluciones completas.<br><br>
+                Experiencia en campañas publicitarias: Nuestros especialistas en marketing digital están capacitados en Meta Ads y Google Ads, garantizando la creación de campañas publicitarias eficientes y optimizadas.<br><br>
+                Soluciones personalizadas: Diseñamos estrategias y contenidos personalizados para cada cliente, asegurando que sus necesidades y objetivos específicos sean atendidos.<br><br>
+                Creatividad visual y técnica: La combinación de diseño gráfico y fotografía profesional garantiza que cada proyecto visual tenga un impacto duradero.
+                </p>
+            </section>
+    
                 <section id="equipo" class="grid-equipo">
                     <div class="card">
-                        <img src="../Assets/Imagenes/luciana.jpg" alt="Luciana Kinner">
+                        <img src="../assets/Imagenes/Luciana.png" alt="Luciana Kinner">
                         <h3>Luciana Kinner</h3>
-                        <p>Señor Diseño Gráfico</p>
+                        <p>Sr Diseño Gráfico</p>
+                        <p>Diseño UX/UI</p>
                     </div>
                     <div class="card">
-                        <img src="../Assets/Imagenes/matias.jpg" alt="Matías López">
+                        <img src="../assets/Imagenes/matias.jpg" alt="Matías López">
                         <h3>Matías López</h3>
                         <p>Marketing Digital</p>
                     </div>
                     <div class="card">
-                        <img src="../Assets/Imagenes/camila.jpg" alt="Camila Duarte">
+                        <img src="../assets/Imagenes/Camila.jpeg" alt="Camila Duarte">
                         <h3>Camila Duarte</h3>
                         <p>Fotografía Profesional</p>
                     </div>
                     <div class="card">
-                        <img src="../Assets/Imagenes/julian.jpg" alt="Julián Torres">
+                        <img src="../assets/Imagenes/julian.jpeg" alt="Julián Torres">
                         <h3>Julián Torres</h3>
                         <p>Editor de Video</p>
                     </div>
                     <div class="card">
-                        <img src="../Assets/Imagenes/valentina.jpg" alt="Valentina Pérez">
+                        <img src="../assets/Imagenes/Valentina.png" alt="Valentina Pérez">
                         <h3>Valentina Pérez</h3>
                         <p>Comunicación y Prensa</p>
                     </div>
-                    <div class="card">
-                        <img src="../Assets/Imagenes/sofia.jpg" alt="Sofía Gómez">
-                        <h3>Sofía Gómez</h3>
-                        <p>Diseño UX/UI</p>
                     </div>
                 </section>
             
             </section>
         </main>
-        </nav>
+        
 
 
 
