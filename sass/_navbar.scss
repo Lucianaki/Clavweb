@@ -1,22 +1,22 @@
 @use 'variables' as *;
 
 .navbar {
-    background-color: #000; // negro como lo tenías
+    background-color: #000;
     padding: 1rem 5%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end; 
     align-items: center;
     position: relative;
 
-    .menu-toggle {
+.menu-toggle {
     display: none;
     font-size: 2rem;
     color: #fff;
     cursor: pointer;
     user-select: none;
-}
+    }
 
-    .nav-links {
+.nav-links {
     list-style: none;
     display: flex;
     gap: 2rem;
@@ -32,35 +32,32 @@
         color: $verde-lima;
         }
     }
-    }
 }
-
-// RESPONSIVE
+/*menu hamburguesa/ responsive*/
 @media (max-width: 768px) {
-    .navbar {
+    justify-content: space-between; 
     .menu-toggle {
         display: block;
     }
 
     .nav-links {
-        display: none;
         flex-direction: column;
+        display: none;
+        background-color: #000;
         position: absolute;
         top: 100%;
-        left: 0;
-        background-color: #000;
+        right: 0;
         width: 100%;
-        padding: 1rem 2rem;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        padding: 1rem;
         z-index: 999;
+
+        li {
+        margin-bottom: 1rem;
+    }
     }
 
     .nav-links.active {
         display: flex;
-    }
-
-    .nav-links li a {
-        color: #fff;
     }
     }
 }
