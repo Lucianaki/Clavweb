@@ -33,14 +33,17 @@
                 </a>
                 </div>
             </div>
-            <nav class="navbar">
-                <ul class="nav-links">
-                    <li><a href="servicios.html">Cómo trabajamos</a></li>
-                    <li><a href="equipo.html">Equipo</a></li>
-                    <li><a href="porfolio.html">Trabajos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+        <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+    
+        <ul class="nav-links" id="nav-links">
+            <li><a href="servicios.html">Cómo trabajamos</a></li>
+            <li><a href="equipo.html">Equipo</a></li>
+            <li><a href="porfolio.html">Trabajos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
         </header>
         <main>
             <h1>
@@ -123,6 +126,15 @@
                     
             </div>
         </footer>
+<!-- JS para menú hamburguesa -->
+<script>
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+    </script>        
 
 </body>
 

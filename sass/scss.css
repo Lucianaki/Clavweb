@@ -285,7 +285,7 @@ main {
 }
 @media (max-width: 768px) {
   .intro-container {
-    lex-direction: column;
+    flex-direction: column;
   }
   .intro-container .imagen, .intro-container .texto {
     flex: 1 1 100%;
@@ -311,10 +311,9 @@ main {
   background-color: #000;
   padding: 1rem 5%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   position: relative;
-  /*menu hamburguesa/ responsive*/
 }
 .navbar .menu-toggle {
   display: none;
@@ -339,15 +338,12 @@ main {
   color: #A4FF00;
 }
 @media (max-width: 768px) {
-  .navbar {
-    justify-content: space-between;
-  }
   .navbar .menu-toggle {
     display: block;
   }
   .navbar .nav-links {
-    flex-direction: column;
     display: none;
+    flex-direction: column;
     background-color: #000;
     position: absolute;
     top: 100%;
