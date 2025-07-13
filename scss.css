@@ -285,7 +285,7 @@ main {
 }
 @media (max-width: 768px) {
   .intro-container {
-    lex-direction: column;
+    flex-direction: column;
   }
   .intro-container .imagen, .intro-container .texto {
     flex: 1 1 100%;
