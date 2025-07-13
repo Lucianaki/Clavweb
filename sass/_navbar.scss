@@ -17,9 +17,9 @@
     }
 
     .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
+        list-style: none;
+        display: flex;
+        gap: 2rem;
 
         li a {
             text-decoration: none;
@@ -58,6 +58,6 @@
 
         .nav-links.active {
             display: flex;
-    }
+        }
     }
 }
