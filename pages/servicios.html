@@ -36,14 +36,14 @@
     <!-- menu hamburguesa prueba-->
     <nav class="navbar">
         <div class="menu-toggle" id="menu-toggle">☰</div>
-            <ul class="nav-links" id="nav-links">
+        <ul class="nav-links" id="nav-links">
             <li><a href="ervicios.html">Cómo trabajamos</a></li>
             <li><a href="equipo.html">Equipo</a></li>
             <li><a href="porfolio.html">Trabajos</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
-        </nav>
-        </header>
+    </nav>
+    </header>
         <main>
             
             <section class="intro-container">
@@ -98,7 +98,15 @@
                 imgs[index].classList.add('activo');
             }, 3000);
         </script>
+<!-- JS para menú hamburguesa -->
+<script>
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
 
+    toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+    </script>
 </body>
 
 </html>
