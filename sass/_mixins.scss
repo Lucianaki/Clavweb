@@ -17,9 +17,7 @@
 }
 
   // Nuevo mixin para separar contenido del navbar
-@mixin separacion-navbar($desktop: 6rem, $mobile: 7rem) {
-    padding-top: $desktop;
-    @include mobile {
-        padding-top: $mobile;
-    }
+
+@mixin separacion-navbar {
+    padding-top: 250px;
 }
