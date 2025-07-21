@@ -14,3 +14,8 @@
         margin-top: $mobile;
     }
 }
+@mixin phone-sm {
+    @media (max-width: 420px) {
+        @content;
+    }
+}
