@@ -16,26 +16,3 @@
     box-sizing: border-box;
     color: black;
 }
-/*---pasando el header--*/
-
-
-/* footer */
-/*extend, ejemplo .img[ heigth: 15vh; width 15vw;}
-.img-personas del equipo{ arrobaestend.imag;}*/
-
-/* mixin, hay que definirlo, la diferencia con extend 
-es que mixin ouede recibir parametros 
-@mixin button-styles($spadding, $border-radius, $gb-color)
-{padding:$padding;
-border-radius: $border-radius;
-$gb-color: $$gb-color;}*/
-/* para llamar a mixin,
-.primary-button{
-@include button-styles(15px5,5px,red}*/
-/*@mixin mobile{
-@media (max-width: 425px)}
-@content;}}
-Body{
-@include mobile{
-display: flex;
-flex-flow: column wrap;}}*/

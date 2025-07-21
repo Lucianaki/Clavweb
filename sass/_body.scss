@@ -1,3 +1,7 @@
 main {
-    padding-top: 180px;
+    margin-top: 8rem;
+
+    @include mobile {
+        margin-top: 10rem;
+    }
 }

@@ -44,7 +44,7 @@
     font-size: 1rem;
     color: #555;
   }
-}
+} 
 
 @media (max-width: 900px) {
   .portfolio-grid {
@@ -104,23 +104,4 @@
 .carrusel img.activo {
   opacity: 1;
   position: relative;
-}
-.que-nos-diferencia {
-  padding: 3rem 8% 1rem; 
-  text-align: center;
-
-  h1 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-    color: #111;
-  }
-
-  p {
-    max-width: 900px;
-    margin: 1rem 8rem; 
-    text-align: justify;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #333;
-  }
 }
