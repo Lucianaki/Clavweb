@@ -6,8 +6,11 @@
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
+  padding-top: 350px; 
 
-  @include separacion-navbar; // Aplica padding-top limpio y reusable
+  @include separacion-navbar{
+    padding-top: 350px;
+  }
 
   @include mobile {
     flex-direction: column;
@@ -15,7 +18,8 @@
 }
 
 .contacto-imagen {
-  flex: 1 1 40%;
+  flex: 210 10 40%;
+  margin-top: 2rem;
 
   img {
     width: 100%;
