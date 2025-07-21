@@ -1,21 +1,25 @@
+
+
 @mixin mobile {
     @media (max-width: 768px) {
-    @content;
-    }
-}
-@mixin mobile-padding-texto {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-}
-@mixin separacion-top($desktop: 8rem, $mobile: 10rem) {
-    margin-top: $desktop;
-
-    @include mobile {
-        margin-top: $mobile;
+        @content;
     }
 }
 @mixin phone-sm {
     @media (max-width: 420px) {
         @content;
+    }
+}
+
+@mixin mobile-padding-texto {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+  // Nuevo mixin para separar contenido del navbar
+@mixin separacion-navbar($desktop: 6rem, $mobile: 7rem) {
+    padding-top: $desktop;
+    @include mobile {
+        padding-top: $mobile;
     }
 }

@@ -5,9 +5,9 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  padding: 4rem 5%;
   flex-wrap: wrap;
-  padding-top: 200px;
+
+  @include separacion-navbar; // Aplica padding-top limpio y reusable
 
   @include mobile {
     flex-direction: column;
