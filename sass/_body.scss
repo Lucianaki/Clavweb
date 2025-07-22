@@ -1,7 +1,9 @@
+@use 'mixins' as *;
 main {
     margin-top: 8rem;
 
     @include mobile {
         margin-top: 10rem;
+        padding-top: 250px !important;
     }
 }
