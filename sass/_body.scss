@@ -3,7 +3,7 @@ main {
     margin-top: 8rem;
 
     @include mobile {
-        margin-top: 10rem;
+        margin-top: 4rem;
         padding-top: 200px !important;
     }
 }
