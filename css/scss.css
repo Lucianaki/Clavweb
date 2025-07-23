@@ -1,5 +1,11 @@
 main {
-  padding-top: 250px!important;
+  margin-top: 8rem;
+}
+@media (max-width: 768px) {
+  main {
+    margin-top: 10rem;
+    padding-top: 200px !important;
+  }
 }
 
 .grid-equipo, .portfolio-grid {
@@ -109,24 +115,6 @@ main {
   position: relative;
 }
 
-.que-nos-diferencia {
-  padding: 3rem 8% 1rem;
-  text-align: center;
-}
-.que-nos-diferencia h1 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: #111;
-}
-.que-nos-diferencia p {
-  max-width: 900px;
-  margin: 1rem 8rem;
-  text-align: justify;
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #333;
-}
-
 .footer-line {
   height: 40px;
   background-color: #000;
@@ -158,18 +146,20 @@ main {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  padding: 4rem 5%;
   flex-wrap: wrap;
+  padding-top: 6rem 5% 3rem;
   padding-top: 200px;
 }
 @media (max-width: 768px) {
   .contacto-container {
     flex-direction: column;
+    padding-top: 8rem;
   }
 }
 
 .contacto-imagen {
-  flex: 1 1 40%;
+  flex: 210 10 40%;
+  margin-top: 2rem;
 }
 .contacto-imagen img {
   width: 100%;
@@ -211,6 +201,14 @@ main {
 }
 .contacto-formulario button:hover {
   background-color: #c3f73a;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
 }
 
 .encabezado {
@@ -271,19 +269,18 @@ main {
   border-radius: 10px;
 }
 @media (max-width: 768px) {
-  .intro-container {
-    flex-direction: column;
-  }
-
-  .intro-container .imagen,
-  .intro-container .texto {
-    flex: 1 1 100%;
-  }
-
   .intro-container .texto {
     font-size: 1rem;
     padding: 1rem 1.5rem;
     text-align: left;
+  }
+}
+@media (max-width: 768px) {
+  .intro-container {
+    flex-direction: column;
+  }
+  .intro-container .imagen, .intro-container .texto {
+    flex: 1 1 100%;
   }
 }
 
@@ -367,6 +364,12 @@ main {
   color: black;
 }
 
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+}
 
-
-
+/*# sourceMappingURL=scss.css.map */
